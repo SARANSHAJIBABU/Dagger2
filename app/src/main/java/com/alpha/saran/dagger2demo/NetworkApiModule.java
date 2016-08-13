@@ -10,7 +10,14 @@ import dagger.Provides;
 public class NetworkApiModule {
 
     @Provides
-    public NetworkApi provideNetworkApi(){
-        return new NetworkApi();
+    public NetworkClient provideNetworkClient(){
+        return new NetworkClient();
     }
+
+    @Provides
+    public NetworkApi provideNetworkApi(NetworkClient client){
+        return new NetworkApi(client);
+    }
+
+
 }
