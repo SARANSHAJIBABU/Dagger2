@@ -3,11 +3,13 @@ package com.alpha.saran.dagger2demo;
 import android.util.Log;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
 /**
  * Created by saran on 13/8/16.
  */
 
+@Singleton
 public class NetworkClient {
     private static int count=0;
 
