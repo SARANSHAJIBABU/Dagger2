@@ -9,6 +9,8 @@ import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
     @Inject NetworkApi api;
+    @Inject NetworkApi apiNew;
+
     TextView textView;
 
     @Override
