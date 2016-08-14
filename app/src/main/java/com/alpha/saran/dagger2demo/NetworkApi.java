@@ -1,5 +1,7 @@
 package com.alpha.saran.dagger2demo;
 
+import android.util.Log;
+
 import javax.inject.Inject;
 
 /**
@@ -7,10 +9,13 @@ import javax.inject.Inject;
  */
 public class NetworkApi {
     NetworkClient mClient;
+    private static int count=0;
 
     @Inject
     public NetworkApi(NetworkClient client){
         mClient = client;
+        count++;
+        Log.d("Dagger2","In NetworkApi,Count = "+count);
     }
 
     public boolean validateUser(String user, String password){
