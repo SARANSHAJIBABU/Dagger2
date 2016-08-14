@@ -1,7 +1,5 @@
 package com.alpha.saran.dagger2demo;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
 
@@ -12,14 +10,8 @@ import dagger.Provides;
 public class NetworkApiModule {
 
     @Provides
-    public NetworkClient provideNetworkClient(Logger logger){
-        return new NetworkClient(logger);
-    }
-
-    @Provides
     public NetworkApi provideNetworkApi(NetworkClient client){
         return new NetworkApi(client);
     }
-
 
 }
