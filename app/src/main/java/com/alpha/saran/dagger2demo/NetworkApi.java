@@ -1,11 +1,14 @@
 package com.alpha.saran.dagger2demo;
 
+import javax.inject.Inject;
+
 /**
  * Created by saran on 13/8/16.
  */
 public class NetworkApi {
     NetworkClient mClient;
 
+    @Inject
     public NetworkApi(NetworkClient client){
         mClient = client;
     }

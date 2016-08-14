@@ -12,7 +12,6 @@ public class MyApplication extends Application{
     public void onCreate() {
         super.onCreate();
         component = DaggerDiComponent.builder()
-                .networkApiModule(new NetworkApiModule())
                 .build();
     }
 

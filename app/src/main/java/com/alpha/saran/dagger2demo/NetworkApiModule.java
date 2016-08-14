@@ -1,7 +1,6 @@
 package com.alpha.saran.dagger2demo;
 
 import dagger.Module;
-import dagger.Provides;
 
 /**
  * Created by saran on 13/8/16.
@@ -9,9 +8,16 @@ import dagger.Provides;
 @Module
 public class NetworkApiModule {
 
-    @Provides
-    public NetworkApi provideNetworkApi(NetworkClient client){
-        return new NetworkApi(client);
-    }
+//    @Provides
+//    public NetworkClient provideNetworkClient(Logger logger){
+//        return new NetworkClient(logger);
+//    }
+
+//    @Provides
+//    public NetworkApi provideNetworkApi(NetworkClient client){
+//        return new NetworkApi(client);
+//    }
+
+
 
 }
