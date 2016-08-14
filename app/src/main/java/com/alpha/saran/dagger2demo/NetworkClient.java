@@ -7,6 +7,12 @@ import android.util.Log;
  */
 public class NetworkClient {
 
+    public NetworkClient(Logger logger){
+        if(logger!=null){
+            Log.d("Dagger2","Logger created");
+        }
+    }
+
     public void connect(){
         Log.d("Dagger2","Connected");
     }
